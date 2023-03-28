@@ -1,3 +1,5 @@
+# Update
+原nim库在Linux下编译时会产生路径错误，于是fork后修改了相关代码（其实是简单粗暴的路径替换），因为不会发布包，所以请下载后将包名改为"memlib-1.3.0"，然后正常放入nim pkgs目录下就可以了
 # Memlib
 This module is designed to be a drop-in replacement for `dynlib pragma` and `dynlib module` in Windows. The main part of this module is a pure nim implementation of the famous MemoryModule library. [MemoryModule](https://github.com/fancycode/MemoryModule) is a C library that can load a DLL completely from memory without storing on the disk first. So that the we can embed all DLLs into the main EXE file.
 
